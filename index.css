@@ -1,0 +1,361 @@
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #f33a3b;
+}
+
+body::-webkit-scrollbar-track {
+    background: #F7EDE3; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f33a3b;  
+    border-radius: 20px;      
+    border: 10px solid #f33a3b;  
+}
+
+body {
+    display: grid;
+    grid-template-rows: 15vh 96vh 25vh 80vh 80vh 80vh 80vh 100vh 42vh;
+    background-color: #F7EDE3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+.Tdisplay {
+    display: grid;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 15vh;
+    align-items: center;
+    margin-bottom: 7vh;
+}
+
+#logo {
+    margin-left: 20%;
+    height: 12vh;
+}
+
+#menu-btn {
+    display: inline-grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #03A3A6;
+}
+
+#menu-icon {
+    grid-column-start: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: -1%;
+    justify-items: center;
+}
+
+#menu-icon li img {
+    width: 30px;
+    height: 30px;
+    
+}
+
+/* fim do menu | inicio do 'banner' da pagina inicial*/
+
+#hp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+figure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 60px;
+    justify-items: center;
+}
+
+figure > img {
+    grid-column: 2 / 4;
+}
+
+#hp > span {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 50px 1fr 55px;
+    grid-template-rows: 20vh 10vh 20vh -1vh;
+    justify-items: center;
+    align-items: center;
+    row-gap: 6vh;
+    margin-left: 4vh;
+}
+
+#p1 {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    font-size: 6vh;
+    font-family: 'HanleyPro-Sans';
+    color: #280B45;
+}
+
+#hp > span > h1 {
+    grid-column: 2 / 5;
+    grid-row: 2;
+    font-size: 16vh;
+    font-family: 'CCSlaphappyOpen';
+    color: #03A3A6;
+}
+
+ #toe {
+    grid-column: 3 / 7;
+    grid-row: 3;
+    font-size: 6vh;
+    font-family: 'HanleyPro-Sans';
+    color: #280B45;
+}
+
+#compre {
+    grid-row: 4;
+    grid-column: 1/3;
+    border: 5px solid;
+    padding: 10px 15px;
+    font-family: 'HanleyPro-Sans';
+    color: #f33a3b;
+    font-size: 3.5vh;
+}
+
+/* Fim do hp | Inicio do titulo e corpo */
+
+#Titulo {
+    grid-template-rows: 10vh;
+    justify-content: center;
+    font-family: 'HanleyPro-Sans';
+    margin-top: 15vh;
+}
+
+#corpo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80vh 80vh 80vh 80vh 87vh;
+}
+
+.GridD {
+    grid-template-columns: 1fr 20vw 35vh;
+    grid-template-rows: 90px 15vh 60vh;
+    justify-items: center;
+    grid-column: 1 / span 2;
+}
+
+.rua {
+    display: block;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    width: 100%;
+    background-image: url(streetT.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+
+
+ /*
+.rua::before {
+    background-image: url(https://secure-static.vans.com.br/_ui/desktop/them…ckerboard-333.schutz-2022-30-hotfix-1-version.jpg);
+    content: " ";
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-x;
+}
+*/
+.ImgE {
+    width: 61vw;
+    height: 67vh;
+    margin-left: -5vh;
+    grid-column: 1 /1;
+    margin-top: -0.2vh;
+}
+
+.GridD > P {
+    grid-column: 2;
+    grid-row: 3;
+    font-family: 'HanleyPro-Sans';
+    padding-top: 5vh;
+}
+
+.GridD > h1 {
+    font-family: 'HanleyPro-Sans';
+    grid-column: 2;
+    align-self: flex-end;
+} 
+
+.GridD > h1 > span {
+    font-family: 'CCSlaphappyOpen';
+    font-size: 50px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/*
+.GridD {
+    grid-column: 1 / span 2;
+}
+
+.ImgE {
+    grid-column: 1 /1;
+}
+
+.GridD > h1 {
+    grid-column: 2;
+}
+
+.GridD {
+    grid-column: 2;
+    grid-row: 3;
+}
+*/
+
+.GridE {
+    grid-template-columns: 35vh 20vw 1fr;
+    grid-template-rows: 90px 15vh 60vh ;
+    justify-items: center;
+    grid-column: 1/ span 2;
+}
+
+.ImgD {
+    width: 61vw;
+    height: 67vh;
+    grid-column: 3;
+    grid-row: 2 / 3;
+    margin-top: -0.2vh;
+}
+
+.TituloE {
+    font-family: 'HanleyPro-Sans';
+    grid-column: 2;
+    align-self: flex-end;
+}
+
+.TituloE > span {
+    font-family: 'CCSlaphappyOpen';
+    font-size: 50px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.PEsquerda {
+    grid-column: 2;
+    grid-row: 3;
+    font-family: 'HanleyPro-Sans';
+    padding-top: 5vh;
+}
+
+#cap {
+    grid-column: 1 / span 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 1fr 1fr;
+    justify-items: center;
+}
+
+#cap > img {
+    width: 61vw;
+    height: 67vh;
+    grid-row: 2;
+    margin-top: -0.2vh;
+}
+
+#cap > h2 {
+    grid-row: 3;
+    font-family: 'HanleyPro-Sans';
+}
+
+#cap > h2 > span {
+    font-family: 'CCSlaphappyOpen';
+    font-size: 5vw;
+}
+
+/* Fim do corpo | Inicio do rodape*/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 100px 1.5fr;
+    grid-template-rows: 10vh 23vh 10vh;
+    align-content: center;
+    
+    background-color: #1F1D1D;
+    color: white;
+    width: 100%;
+    height: 42vh;
+    grid-row: 9;
+}
+
+footer > div > ul {
+    list-style: none;
+}
+
+.quebra {
+    margin-left: -1vw;
+    margin-bottom: 5px;
+}
+
+#listas {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    font-family: 'HanleyPro-Sans';
+}
+
+#lista1 {
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+#lista2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#lista3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#copyright {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: 1vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#rede-icon {
+    grid-column: 5;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "face insta tk"
+                         "tw whats pin";
+}
+
+#face {grid-area: face;}
+#insta {grid-area: insta;}
+#tk {grid-area: tk;}
+#tw {grid-area: tw;}
+#whats {grid-area: whats;}
+#pin {grid-area: pin;}
+.rede-icon-tamanho {
+    width: 70px;
+    height: 70px;
+}
