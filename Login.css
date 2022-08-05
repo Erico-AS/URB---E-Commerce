@@ -1,0 +1,36 @@
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #f33a3b;
+}
+
+body::-webkit-scrollbar-track {
+    background: #F7EDE3; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f33a3b;  
+    border-radius: 20px;      
+    border: 10px solid #f33a3b;  
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100%;
+    background-color: #F7EDE3;
+    justify-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.Tdisplay {
+    display: grid;
+}
