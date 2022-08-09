@@ -15,7 +15,7 @@ body::-webkit-scrollbar-thumb {
 
 body {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15vh 1fr 1fr 1fr;
     background-color: #F7EDE3;
 }
 
@@ -68,4 +68,151 @@ body {
     width: 30px;
     height: 30px;
     
+}
+
+/*Fim do menu | Inicio do banner*/
+
+#banner {
+    grid-row: 2;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: grid;
+    grid-template-rows: 23.25vh 23.25vh 23.25vh;
+}
+
+#banner > h1 {
+    grid-row: 2;
+    z-index: 2;
+    align-self: center;
+    justify-self: center;
+
+    font-family: 'HanleyPro-Sans';
+    font-size: 10vh;
+}
+
+#vid {
+    height: 110vh;
+}
+
+#capa {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+/*Fim do banner | Inicio do texto*/
+
+section {
+    grid-row: 3;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+section h1 {
+    font-family: 'HanleyPro-Sans';
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+picture {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+}
+
+section span {
+    grid-row: 2;
+    grid-column: 2;
+    text-align: justify;
+}
+
+section p {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+
+/*Fim do texto | Rodapé*/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 100px 1.5fr;
+    grid-template-rows: 10vh 23vh 10vh;
+    align-content: center;
+    
+    background-color: #1F1D1D;
+    color: white;
+    width: 100%;
+    height: 100%;
+    grid-row: 4;
+}
+
+footer > div > ul {
+    list-style: none;
+}
+
+.quebra {
+    margin-left: -1vw;
+    margin-bottom: 5px;
+}
+
+#listas {
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    font-family: 'HanleyPro-Sans';
+}
+
+#lista1 {
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+#lista2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#lista3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#copyright {
+    grid-column: 1 / span 5;
+    grid-row: 3;
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: 1vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#rede-icon {
+    grid-column: 5;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "face insta tk"
+                         "tw whats pin";
+}
+
+#face {grid-area: face;}
+#insta {grid-area: insta;}
+#tk {grid-area: tk;}
+#tw {grid-area: tw;}
+#whats {grid-area: whats;}
+#pin {grid-area: pin;}
+.rede-icon-tamanho {
+    width: 70px;
+    height: 70px;
 }
