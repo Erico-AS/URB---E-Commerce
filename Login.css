@@ -14,10 +14,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-    display: grid;
-    grid-template-rows: 100%;
     background-color: #F7EDE3;
-    justify-items: center;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }
 
 * {
@@ -33,4 +35,52 @@ body {
 
 .Tdisplay {
     display: grid;
+}
+
+#login {
+    width: 25vw;
+    height: 60vh;
+    border: 1px solid;
+    border-radius: 5px;
+
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 2fr 5vh 1fr;
+
+}
+
+#login img {
+    grid-row: 1;
+    max-width: 100%;
+    height: 40vh;
+}
+
+#login h2 {
+    grid-row: 2;
+    font-family: 'HanleyPro-Sans';
+}
+
+#login-caixa {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    grid-row: 3;
+    width: 100%;
+}
+
+#login input {
+    height: 4vh;
+    margin-left: 1vw;
+    margin-right: 3vh;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+#login ::-webkit-input-placeholder {
+    margin-left: 1vw;
+}
+
+.caixa-textinho::placeholder {
+    padding-left: 0.25vw;
 }
