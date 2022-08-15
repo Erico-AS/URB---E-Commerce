@@ -137,25 +137,25 @@ body {
 }
 
 .imagem-grande {
-    width: 100%;
+
     height: 65%;
-    object-fit: cover;
+    background-size: cover;
     overflow: hidden;
     max-width: 100%;
-    background-image: url(n1.webp);
+    background-image: url(cap.png);
     background-repeat: no-repeat;
     background-position: bottom;
     max-height: 65%;
 }
 
 .img-normal {
-    width: 100%;
+
     height: 65%;
-    object-fit: cover;
+    background-size: cover;
     overflow: hidden;
     max-width: 100%;
     background-repeat: no-repeat;
-    background-image: url(n3.webp);
+    background-image: url(cap.png);
     max-height: 65%;
 }
 
