@@ -1,5 +1,5 @@
-@import url(//db.onlinewebfonts.com/c/718424dad33f1bd8574f5eae2e58368e?family=CCSlaphappyOpen);
-@import url(//db.onlinewebfonts.com/c/0f26b3e18150776f5ced203524ea7573?family=Hanley+Pro+Sans);
+@font-face {font-family: "Hanley Pro Sans"; src: url("//db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.eot"); src: url("//db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.woff") format("woff"), url("//db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0f26b3e18150776f5ced203524ea7573.svg#Hanley Pro Sans") format("svg"); }
+@font-face {font-family: "CCSlaphappy"; src: url("//db.onlinewebfonts.com/t/4c6d7b21f834a2dfdc2a50d2e8651ffb.eot"); src: url("//db.onlinewebfonts.com/t/4c6d7b21f834a2dfdc2a50d2e8651ffb.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4c6d7b21f834a2dfdc2a50d2e8651ffb.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4c6d7b21f834a2dfdc2a50d2e8651ffb.woff") format("woff"), url("//db.onlinewebfonts.com/t/4c6d7b21f834a2dfdc2a50d2e8651ffb.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4c6d7b21f834a2dfdc2a50d2e8651ffb.svg#CCSlaphappy") format("svg"); }
 
 body::-webkit-scrollbar{
     width: 7px;
