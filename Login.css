@@ -14,12 +14,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-    background-color: #F7EDE3;
-    display: flex;
+    background-color: #F7EDE3 !important;
+    display: grid;
     width: 100%;
     height: 100vh;
+    justify-items: center;
     align-items: center;
-    justify-content: center;
 }
 
 * {
@@ -39,7 +39,7 @@ body {
 
 #login {
     width: 25vw;
-    height: 60vh;
+    height: 75vh;
     border: 1px solid;
     border-radius: 5px;
 
@@ -58,6 +58,8 @@ body {
 #login h2 {
     grid-row: 2;
     font-family: 'HanleyPro-Sans';
+    max-width: 200px;
+    font-size: larger;
 }
 
 #login-caixa {
@@ -69,18 +71,24 @@ body {
 }
 
 #login input {
-    height: 4vh;
-    margin-left: 1vw;
-    margin-right: 3vh;
     background-color: transparent;
-    border: 2px solid;
-    border-radius: 5px;
 }
 
-#login ::-webkit-input-placeholder {
-    margin-left: 1vw;
+#btnEnviar {
+    width: 15.6vw !important;
+    margin-bottom: 1vh;
+    margin-top: 3vh;
 }
 
-.caixa-textinho::placeholder {
-    padding-left: 0.25vw;
+
+/* Botões */
+
+section {
+    align-self: baseline;
 }
+
+.btn-outline-primary {
+    color: black !important;
+    border-color: black !important;
+}
+
