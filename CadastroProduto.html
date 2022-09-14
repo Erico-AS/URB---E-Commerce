@@ -2,44 +2,46 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Login.css" type="text/css"/>
-    <link href="//db.onlinewebfonts.com/c/0f26b3e18150776f5ced203524ea7573?family=HanleyPro-Sans" rel="stylesheet" type="text/css"/>
-    <link href="//db.onlinewebfonts.com/c/718424dad33f1bd8574f5eae2e58368e?family=CCSlaphappyOpen" rel="stylesheet" type="text/css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <title>URB - Login e Cadastro</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CadastroProduto.css">
+    <title>URB - Cadastre seu produto</title>
 </head>
 <body>
+    <form>
+        <h1>Cadastre seu produto</h1>
+            <fieldset>
+                <content class="inputs" id="nome-produto">
+                    <label>Nome do produto:</label>
+                    <input type="text" placeholder="Nome do produto">
+                </content>
 
-    <div id="login">
+                <content class="inputs" id="nome-vendedor">
+                    <label>Vendedor</label>
+                    <input type="text" placeholder="Nome Vendedor">
+                </content>
 
-        <img src="Login.png">
+                <div class="inputs" id="preco-produto">
+                    <label>Preço do produto</label>
+                    <input type="number" placeholder="R$">
+                </div>
+                
+                <content class="inputs" id="cod-produto">
+                    <label>Código do produto</label>
+                    <input type="number">
+                </content>
 
-        <h2>Cadastre um Produto</h2>
+                <content class="inputs" id="qtd-estoque">
+                    <label>Quantidade em estoque</label>
+                    <input type="number">
+                </content>
 
-        <div class="form-floating mb-3">
-            <input type="email" name="Email" class="form-control" id="floatingInput">
-            <label name="lbl1" for="floatingInput"></label>
-          </div>
-          <div class="form-floating">
-            <input type="password" name="Senha" class="form-control" id="floatingPassword">
-            <label for="floatingPassword"></label>
-
-            <button type="button" class="btn btn-outline-primary" id="btnEnviar" onclick= "Enviar()"> Enviar </button>
-        </div>
-    </div>
-
-    <section>
-
-        <a href="CadastroAdm.html"><button type="button" class="btn btn-outline-primary">Cadastro de Administrador</button></a>
-        <a href="LogUser.html"><button type="button" class="btn btn-outline-primary">Login Usuário</button></a>
-        <a href="LogAdm.html"><button type="button" class="btn btn-outline-primary">Login Administrador</button></a>
-        <a href="Login.html"><button type="button" class="btn btn-outline-primary">Cadastro usuário</button></a>
-
-    </section>
+                <content class="inputs" id="descricao">
+                    <label>Descrição do produto</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </content>
+            </fieldset>
+    </form>
 
 </body>
-<script src="Log.js"></script>
 </html>

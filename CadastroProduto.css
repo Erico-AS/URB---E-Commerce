@@ -1,0 +1,74 @@
+@import url(//db.onlinewebfonts.com/c/718424dad33f1bd8574f5eae2e58368e?family=CCSlaphappyOpen);
+@import url(//db.onlinewebfonts.com/c/0f26b3e18150776f5ced203524ea7573?family=Hanley+Pro+Sans);
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: #f33a3b;
+}
+
+body::-webkit-scrollbar-track {
+    background: #F7EDE3; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f33a3b;  
+    border-radius: 20px;      
+    border: 10px solid #f33a3b;  
+}
+
+body {
+    background-color: #F7EDE3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    position: absolute;
+
+    height:35vh;
+}
+
+fieldset {
+    border: 1px solid;
+    border-radius: 5px;
+
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+}
+
+fieldset {
+    grid-template-areas: 'nomeP nomeV nomeV'
+    'cod qtd preco'
+    'descricao descricao descricao';
+}
+
+#nome-produto{grid-area: nomeP;}
+#nome-vendedor{grid-area: nomeV;}
+#preco-produto{grid-area: preco;}
+#cod-produto{grid-area: cod;}
+#qtd-estoque{grid-area: qtd;}
+#descricao{grid-area: descricao;}
+
+.inputs {
+    display: flex;
+}
