@@ -44,22 +44,25 @@ form {
     position: absolute;
 
     height:35vh;
+    width: 55vw;
 }
 
 fieldset {
     border: 1px solid;
     border-radius: 5px;
+    padding: 10px;
 
     width: 100%;
     height: 100%;
 
     display: grid;
+    align-items: center;
 }
 
 fieldset {
-    grid-template-areas: 'nomeP nomeV nomeV'
-    'cod qtd preco'
-    'descricao descricao descricao';
+    grid-template-areas: 'nomeP nomeV'
+    'cod qtd'
+    'descricao preco';
 }
 
 #nome-produto{grid-area: nomeP;}
@@ -71,4 +74,8 @@ fieldset {
 
 .inputs {
     display: flex;
+}
+
+.inp {
+    margin-left: 5px;
 }

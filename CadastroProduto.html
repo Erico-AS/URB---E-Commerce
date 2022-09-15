@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="CadastroProduto.css">
+    <script src="CadProd.js"></script>
     <title>URB - Cadastre seu produto</title>
 </head>
 <body>
@@ -13,32 +14,32 @@
             <fieldset>
                 <content class="inputs" id="nome-produto">
                     <label>Nome do produto:</label>
-                    <input type="text" placeholder="Nome do produto">
+                    <input type="text" class="inp" placeholder="Nome do produto">
                 </content>
 
                 <content class="inputs" id="nome-vendedor">
-                    <label>Vendedor</label>
-                    <input type="text" placeholder="Nome Vendedor">
+                    <label>Vendedor:</label>
+                    <input  class="inp" type="text" placeholder="Nome Vendedor" >
                 </content>
 
                 <div class="inputs" id="preco-produto">
-                    <label>Preço do produto</label>
-                    <input type="number" placeholder="R$">
+                    <label>Preço do produto:</label>
+                    <input class="inp" type="text" placeholder="R$" name="dinheiro" oninput="mascara_dinheiro()" onchange="mascara_dinheiro_virgula ()">
                 </div>
                 
                 <content class="inputs" id="cod-produto">
-                    <label>Código do produto</label>
-                    <input type="number">
+                    <label>Código do produto:</label>
+                    <input class="inp" type="number" >
                 </content>
 
                 <content class="inputs" id="qtd-estoque">
-                    <label>Quantidade em estoque</label>
-                    <input type="number">
+                    <label>Quantidade em estoque:</label>
+                    <input class="inp" type="number" >
                 </content>
 
                 <content class="inputs" id="descricao">
-                    <label>Descrição do produto</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label>Descrição do produto:</label>
+                    <textarea class="form-control inp" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </content>
             </fieldset>
     </form>
