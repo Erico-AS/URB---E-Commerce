@@ -15,17 +15,21 @@
 
     <div id="login">
 
-        <img src="Login.png">
-
         <h2>Faça seu cadastro</h2>
 
         <div class="form-floating mb-3">
             <input type="email" name="Email" class="form-control" id="floatingInput">
             <label name="lbl1" for="floatingInput"></label>
-          </div>
-          <div class="form-floating">
+        </div>
+        <div class="form-floating">
             <input type="password" name="Senha" class="form-control" id="floatingPassword">
             <label for="floatingPassword"></label>
+        </div>
+
+            <div class="form-floating mb-3">
+                <input type="text" name="cpf" class="form-control" id="floatingInput" placeholder="CPF">
+                <label for="floatingInput">xxx.xxx.xxx-xx</label>
+              </div>
 
             <button type="button" class="btn btn-outline-primary" id="btnEnviar" onclick= "Enviar()"> Enviar </button>
         </div>
