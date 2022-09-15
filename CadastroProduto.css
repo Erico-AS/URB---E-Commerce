@@ -43,7 +43,7 @@ form {
     left: 50%;
     position: absolute;
 
-    height:35vh;
+    height:50vh;
     width: 55vw;
 }
 
@@ -74,8 +74,29 @@ fieldset {
 
 .inputs {
     display: flex;
+    align-items: center;
 }
 
 .inp {
     margin-left: 5px;
+
+    border: 1px;
+    border-radius: 5px;
+
+    height: 4vh;
+}
+
+button {
+    background-color: black;
+    color: aliceblue;
+
+    width: 10vw;
+    height: 8vh;
+    align-self: center;
+
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgray;
 }

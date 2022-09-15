@@ -24,7 +24,8 @@
 
                 <div class="inputs" id="preco-produto">
                     <label>Preço do produto:</label>
-                    <input class="inp" type="text" placeholder="R$" name="dinheiro" oninput="mascara_dinheiro()" onchange="mascara_dinheiro_virgula ()">
+                    <input class="inp" type="text" placeholder="R$" id="dinheiro" oninput="mascara_dinheiro_cifrao()" 
+                    onchange="mascara_dinheiro_virgula()" onkeyup="moeda(this)">
                 </div>
                 
                 <content class="inputs" id="cod-produto">
@@ -41,7 +42,11 @@
                     <label>Descrição do produto:</label>
                     <textarea class="form-control inp" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </content>
+
+
             </fieldset>
+
+            <button>Enviar</button>
     </form>
 
 </body>

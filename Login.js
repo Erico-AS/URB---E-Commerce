@@ -1,4 +1,4 @@
-document.getElementsByTagName('label')[0].innerHTML = 'Usuário'
+document.getElementsByTagName('label')[0].innerHTML = 'e-mail'
 document.getElementsByTagName('label')[1].innerHTML = 'Senha'
 
 function Enviar() {

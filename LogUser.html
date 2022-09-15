@@ -13,33 +13,33 @@
 </head>
 <body>
 
-    <div id="login">
+    <form>
+        <h1>Faça seu cadastro Usuário</h1>
+        <fieldset>
+                <div class="form-floating mb-3">
+                    <input type="email" name="Email" class="form-control" id="floatingInput">
+                    <label name="lbl1"></label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" name="Senha" class="form-control" id="floatingPassword">
+                    <label for="floatingPassword"></label>
+                </div>
 
-        <img src="Login.png">
-
-        <h2>Login usuário</h2>
-
-        <div class="form-floating mb-3">
-            <input type="email" name="Email" class="form-control" id="floatingInput">
-            <label name="lbl1" for="floatingInput"></label>
-          </div>
-          <div class="form-floating">
-            <input type="password" name="Senha" class="form-control" id="floatingPassword">
-            <label for="floatingPassword"></label>
-
-            <button type="button" class="btn btn-outline-primary" id="btnEnviar" onclick= "Enviar()"> Enviar </button>
-        </div>
-    </div>
+                <button type="button" class="btn btn-outline-primary" id="btnEnviar" onclick= "Enviar()"> Enviar </button>
+        </fieldset>
 
     <section>
 
         <a href="CadastroAdm.html"><button type="button" class="btn btn-outline-primary">Cadastro de Administrador</button></a>
-        <a href="Login.html"><button type="button" class="btn btn-outline-primary">Cadastro usuário</button></a>
+        <a href="pagCadastro.html"><button type="button" class="btn btn-outline-primary">Cadastro de Usuário</button></a>
         <a href="LogAdm.html"><button type="button" class="btn btn-outline-primary">Login Administrador</button></a>
         <a href="CadastroProduto.html"><button type="button" class="btn btn-outline-primary">Cadastrar Produto</button></a>
 
     </section>
 
+</form>
+
 </body>
-<script src="Login.js"></script>
+<script src="Login.js">
+</script>
 </html>

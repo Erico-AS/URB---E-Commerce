@@ -1,55 +1,59 @@
 console.log("tá rodando")
 
-function mascara_dinheiro() {
-    var dinheiro_formato = document.getElementsByName("dinheiro").value
+function mascara_dinheiro_cifrao()
+{
+    var dinheiro_formatado = document.getElementsByTagName("input")[2].value
 
-    if (dinheiro_formato[0] != "R") {
-        if (dinheiro_formato[0] != undefined) {
-            document.getElementsByName("dinheiro").value = "R$" + dinheiro_formato[0]
+    if (dinheiro_formatado[0]!="R")
+    {
+        if(dinheiro_formatado[0]!=undefined)
+        {
+            document.getElementsByTagName("input")[2].value="R$"+dinheiro_formatado[0];
         }
     }
 
-    if (dinheiro_formato[1] != "$") {
-        if (dinheiro_formato[1] != undefined) {
-            document.getElementsByName("dinheiro").value = dinheiro_formato[0] + "$" + dinheiro_formato[1];
+    if (dinheiro_formatado[1]!="$")
+    {
+        if(dinheiro_formatado[1]!=undefined)
+        {
+            document.getElementsByTagName("input")[2].value=dinheiro_formatado[0]+"$"+dinheiro_formatado[1];
         }
     }
 }
 
-function mascara_dinheiro_virgula () 
+function mascara_dinheiro_virgula ()
 {
-    var dinheiro_formato = document.getElementsByName("dinheiro").value;
+    var dinheiro_formatado = document.getElementsByTagName("input")[2].value;
 
 
-    if (dinheiro_formato[dinheiro_formato.length-3]!=",") 
+    if (dinheiro_formatado[dinheiro_formatado.length-3]!=",") 
     {
 
-        if (dinheiro_formato[dinheiro_formato.length-2]==",") 
+        if (dinheiro_formatado[dinheiro_formatado.length-2]==",") 
         {
 
-            document.getElementById("dinheiro").value = dinheiro_formato+"0";
+            document.getElementsByTagName("input")[2].value = dinheiro_formatado+"0";
         }
         else
         {
 
-            if (dinheiro_formato[dinheiro_formato.length-1]==",") 
+            if (dinheiro_formatado[dinheiro_formatado.length-1]==",") 
             {
 
-                document.getElementById("dinheiro").value = dinheiro_formato+"00";
+                document.getElementsByTagName("input")[2].value = dinheiro_formatado+"00";
             }
             else
             {
 
-                document.getElementById("dinheiro").value = dinheiro_formato+",00";
+                document.getElementsByTagName("input")[2].value = dinheiro_formatado+",00";
             }
         }
 
     }
-  
 }
 
 function moeda(z){
-    v = document.getElementsByName("dinheiro").value;
-    
-    v=v.replace(/\D/g,"") // permite digitar apenas numero
+    v = z.value;
+    v=v.replace(/\D/g,"")
+    z.value = v;
 }

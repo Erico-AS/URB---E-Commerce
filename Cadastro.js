@@ -1,5 +1,7 @@
+document.getElementsByTagName('input')[0].innerHTML = 'email'
 document.getElementsByTagName('label')[0].innerHTML = 'Administrador'
 document.getElementsByTagName('label')[1].innerHTML = 'Senha'
+document.getElementsByTagName('label')[2].innerHTML = 'Codigo';
 
 function Enviar() {
     let inp1 = document.getElementsByTagName('input')[0].value;
