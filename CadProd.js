@@ -8,7 +8,7 @@ function mascara_dinheiro_cifrao()
     {
         if(dinheiro_formatado[0]!=undefined)
         {
-            document.getElementsByTagName("input")[2].value="R$"+dinheiro_formatado[0];
+            document.getElementsByTagName("input")[2].value="R"+dinheiro_formatado[0];
         }
     }
 
