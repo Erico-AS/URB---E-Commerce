@@ -8,7 +8,7 @@ function mascara_dinheiro_cifrao()
     {
         if(dinheiro_formatado[0]!=undefined)
         {
-            document.getElementsByTagName("input")[2].value="R"+dinheiro_formatado[0];
+            document.getElementsByTagName("input")[2].value="R$"+dinheiro_formatado[0];
         }
     }
 
@@ -50,10 +50,4 @@ function mascara_dinheiro_virgula ()
         }
 
     }
-}
-
-function moeda(z){
-    v = z.value;
-    v=v.replace(/\D/g,"")
-    z.value = v;
 }
